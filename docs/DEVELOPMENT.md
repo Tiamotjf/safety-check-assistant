@@ -33,6 +33,16 @@ Three illustrated paths cover review/approval, blocking/recovery/cancel, and fal
 
 Architecture, the report and README identify what is implemented, simulated and planned. Automated records and browser screenshots are separate evidence. No scan accuracy, trust, decision-time or participant statistics were collected.
 
+## Stage 4 — Put actual demonstrations in the report
+
+The student requested that the report show the running system, apply course concepts without formal lecture citations, retain Harvard citations for external sources and use more direct prose. The illustrated reports now use actual interface states for three primary examples, plus a supplementary failure/retry check. [Report demonstrations](REPORT_DEMONSTRATIONS.md) links the steps, original screenshots, DOM snapshots and report crops.
+
+Codex replayed 17 states in a separate local server session on port 8767 on 24 November 2026, leaving the student's port 8765 session untouched. The run covered preparation and approval; independent recipient and attachment blocks; edits and rechecking; cancellation; generic and specific warnings; one-time correction and its reset; tool failure; retry; and the unsaved-edit guard. The original evidence is in `../evidence/report-demo/`, with `observations.json` describing the observed actions and regions. These remain functional demonstrations with fictional data, not observations of recruited participants.
+
+A third interface inconsistency was identified during this revision: changing the warning selector while draft edits were unapplied could leave the selector showing generic wording while the cards still displayed the detailed explanation. The revised handler restores the previous selector value, keeps approval blocked and asks the user to apply the draft changes first. Capture `16-unsaved-edit-guard` verifies that guard; `17-saved-edit-switch` verifies that switching works after applying the edit and rerunning checks. The existing approval and server validation requirements were retained.
+
+This revision is prepared under the local release label `a2-review-v2`. The public repository remains unpublished at the student's request. The latest automated output is retained in `../evidence/automated-tests.txt`; browser evidence is recorded separately because it checks visible behaviour that the control tests do not establish.
+
 ## AI assistance and authorship
 
 - Tool: Codex in the desktop app. It inspected the supplied A1/lab documents, proposed the limited scope, generated Python/HTML/CSS/JavaScript, tests, diagrams, report text and documentation, and operated browser checks.

@@ -1,0 +1,35 @@
+test_advisory_requires_reason (test_engine.ControlTests.test_advisory_requires_reason) ... ok
+test_both_issues_resolved_then_send (test_engine.ControlTests.test_both_issues_resolved_then_send) ... ok
+test_cancel_invalidates_approval (test_engine.ControlTests.test_cancel_invalidates_approval) ... ok
+test_contact_selection_does_not_clear_sensitive_file (test_engine.ControlTests.test_contact_selection_does_not_clear_sensitive_file) ... ok
+test_correction_not_a_future_permission (test_engine.ControlTests.test_correction_not_a_future_permission) ... ok
+test_edit_invalidates_correction (test_engine.ControlTests.test_edit_invalidates_correction) ... ok
+test_failure_never_claims_success_and_retry_needs_review (test_engine.ControlTests.test_failure_never_claims_success_and_retry_needs_review) ... ok
+test_invalid_fixture_and_empty_message (test_engine.ControlTests.test_invalid_fixture_and_empty_message) ... ok
+test_no_send_without_approval (test_engine.ControlTests.test_no_send_without_approval) ... ok
+test_normal_and_duplicate_request (test_engine.ControlTests.test_normal_and_duplicate_request) ... ok
+test_old_receipt_cannot_replace_new_scenario (test_engine.ControlTests.test_old_receipt_cannot_replace_new_scenario) ... ok
+test_review_requires_current_version_and_explicit_check (test_engine.ControlTests.test_review_requires_current_version_and_explicit_check) ... ok
+test_stale_approval_after_edit (test_engine.ControlTests.test_stale_approval_after_edit) ... ok
+test_unresolved_contact_blocks_review (test_engine.ControlTests.test_unresolved_contact_blocks_review) ... ok
+test_api_normal_flow (test_http.HTTPTests.test_api_normal_flow) ... 127.0.0.1 - - [24/Nov/2026 23:16:27] "GET /api/state HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/review HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/send HTTP/1.1" 200 -
+ok
+test_api_validation_cannot_bypass_gate (test_http.HTTPTests.test_api_validation_cannot_bypass_gate) ... 127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/scenario HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/prepare HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/review HTTP/1.1" 400 -
+ok
+test_browser_sessions_are_separate (test_http.HTTPTests.test_browser_sessions_are_separate) ... 127.0.0.1 - - [24/Nov/2026 23:16:27] "GET /api/state HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "GET /api/state HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/scenario HTTP/1.1" 200 -
+127.0.0.1 - - [24/Nov/2026 23:16:27] "GET /api/state HTTP/1.1" 200 -
+ok
+test_cross_origin_post_rejected (test_http.HTTPTests.test_cross_origin_post_rejected) ... 127.0.0.1 - - [24/Nov/2026 23:16:27] "POST /api/prepare HTTP/1.1" 403 -
+ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.920s
+
+OK

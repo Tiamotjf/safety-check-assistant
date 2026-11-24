@@ -5,3 +5,4 @@ __pycache__/
 runtime/
 *.log
 .DS_Store
+.vs/

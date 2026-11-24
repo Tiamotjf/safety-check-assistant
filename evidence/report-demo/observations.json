@@ -1,0 +1,410 @@
+[
+  {
+    "name": "01-request",
+    "note": "Normal request before preparing any draft.",
+    "boxes": {
+      ".activity": {
+        "height": 115.08333587646484,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 671.7396240234375
+      },
+      ".draft-card": {
+        "height": 231.86459350585935,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 149.2291717529297,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "02-normal-review",
+    "note": "Exact draft and attachment visible; Approve disabled until review checkbox.",
+    "boxes": {
+      ".activity": {
+        "height": 115.08333587646484,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 350.09375,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "03-normal-result",
+    "note": "After explicit review and approval: simulated send recorded; draft locked.",
+    "boxes": {
+      ".activity": {
+        "height": 115.08333587646484,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 231.40625,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "04-risk-blocked",
+    "note": "Two separate blocking issues; no approval available.",
+    "boxes": {
+      ".activity": {
+        "height": 122.45833587646484,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1230.260498046875
+      },
+      ".draft-card": {
+        "height": 790.3854370117188,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 663.9896240234375,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "05-contact-fixed",
+    "note": "Selecting and applying the contact clears ambiguity but not the restricted attachment.",
+    "boxes": {
+      ".activity": {
+        "height": 145.5,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1230.2604166865349
+      },
+      ".draft-card": {
+        "height": 790.3854370117188,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 558.5,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "06-risk-rechecked",
+    "note": "Recipient and attachment resolved; edited subject/body visible; fresh review required.",
+    "boxes": {
+      ".activity": {
+        "height": 145.5,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.86466473341
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 411.125,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "07-cancelled",
+    "note": "Cancelling closes the revised draft and records no send.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 231.40625,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "08-false-alarm-detailed",
+    "note": "Public attachment and specific evidence reveal an advisory false alarm.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 720.96875,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "09-false-alarm-generic",
+    "note": "Generic wording changes the message but not the approval requirement.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 628.3854370117188,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "10-one-time-correction",
+    "note": "Reason recorded for this draft only; review checkbox still required.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 751.5625,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "11-false-alarm-result",
+    "note": "Simulated send after correction and explicit approval.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 419.0729370117187,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "12-correction-reset",
+    "note": "Reloading the same task clears the prior correction and blocks approval again.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 720.96875,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  },
+  {
+    "name": "13-failure-configured",
+    "note": "Next mock tool call configured to fail in the normal scenario.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 386.09375,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "14-send-failed",
+    "note": "Failure shown without claiming success; Approve disabled until fresh review.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 468.8229370117187,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "15-retry-success",
+    "note": "Fresh review after failure produces the simulated success outcome.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1191.8646240234375
+      },
+      ".draft-card": {
+        "height": 751.9896240234375,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.875
+      },
+      ".review-card": {
+        "height": 231.40625,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.875
+      }
+    }
+  },
+  {
+    "name": "16-unsaved-edit-guard",
+    "note": "Unapplied message edit blocks approval and reverts warning selector to its displayed mode.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1277.6458740234375
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 484.4583435058594
+      },
+      ".review-card": {
+        "height": 720.96875,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 484.4583435058594
+      }
+    }
+  },
+  {
+    "name": "17-saved-edit-switch",
+    "note": "After applying the edit, warning switching works and the correction still requires a new decision.",
+    "boxes": {
+      ".activity": {
+        "height": 168.5416717529297,
+        "width": 1200,
+        "x": 32.333335876464844,
+        "y": 1211.0625407099724
+      },
+      ".draft-card": {
+        "height": 771.1875,
+        "width": 617.0416870117188,
+        "x": 32.333335876464844,
+        "y": 417.87501019239426
+      },
+      ".review-card": {
+        "height": 689.4166870117188,
+        "width": 560.9583740234375,
+        "x": 671.375,
+        "y": 417.87501019239426
+      }
+    }
+  }
+]

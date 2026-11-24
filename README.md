@@ -1,6 +1,6 @@
 # AI Agent Safety Check Assistant
 
-README prose word count: 434 (headings and table text included; code and setup commands excluded).
+README prose word count: 471 (headings and table text included; code and setup commands excluded).
 
 ## Status
 
@@ -41,12 +41,14 @@ The recorded run passed 18 tests. Approvals are bound to draft version and conte
 
 ## Development record and assistance
 
-See [development record](docs/DEVELOPMENT.md), [validation](docs/VALIDATION.md) and [lecture mapping](docs/LECTURE_MAPPING.md). Earlier Lab 2/3 documents are retained as explicitly labelled provenance, not runnable features. No Lab 4 code is reused.
+See [development record](docs/DEVELOPMENT.md), [validation](docs/VALIDATION.md), [report demonstrations](docs/REPORT_DEMONSTRATIONS.md) and [lecture mapping](docs/LECTURE_MAPPING.md). Earlier Lab 2/3 documents are retained as explicitly labelled provenance, not runnable features. No Lab 4 code is reused.
 
-Codex assisted with implementation, tests, writing, diagrams and browser operation. The development record explains the warning-gate adaptation and two browser-discovered fixes. These are AI-operated checks, not participant research or a claim of independent student implementation. The student must review the material, record their own revisions and explain the design before submission.
+Codex assisted with implementation, tests, writing, diagrams and browser operation. The development record explains the warning-gate adaptation, two initial browser-discovered fixes and a later warning-selector correction. These are AI-operated checks, not participant research or a claim of independent student implementation. The student must review the material, record their own revisions and explain the design before submission.
 
 ## Submission and additional files
 
-Local release label: `a2-review-v1` (matching Git tag). A public repository URL has not yet been supplied; add the real URL and immutable commit/release link to the report before submission. Do not submit placeholder links. The Word report and Chinese task guide are delivered separately. All project evidence can reasonably be kept in the repository; no supplementary submission ZIP is needed merely to duplicate it.
+Local release label: `a2-review-v2`. Public GitHub publication is deferred at the student's request; add the real repository and immutable commit/release links to the report before submission. Do not submit placeholder links.
+
+The [English illustrated report](docs/A2_Project_Report_3110586_Illustrated.docx) and [Chinese reading version](docs/A2_Project_Report_中文版_图示修订版.docx) include three primary interaction examples and a supplementary failure/retry check. Their screenshots come from the 17-state replay recorded in [report demonstrations](docs/REPORT_DEMONSTRATIONS.md). Course concepts are applied without formal lecture citations; external sources use Harvard referencing. All project evidence can reasonably be kept in the repository; no supplementary submission ZIP is needed merely to duplicate it.
 
 The local handover archive is a convenience for moving the project, not an assignment requirement. There are no credentials or external dependencies to configure.

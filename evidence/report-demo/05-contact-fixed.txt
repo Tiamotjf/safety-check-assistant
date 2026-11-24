@@ -1,0 +1,70 @@
+- banner:
+  - generic: ✓
+  - text: Safety Check Assistant
+  - generic: Review before an agent acts
+  - generic: OFFLINE PROTOTYPE · NO REAL EMAIL
+- main:
+  - paragraph: AI AGENT SAFETY CHECK ASSISTANT
+  - heading "A clear decision before sending." [level=1]
+  - paragraph: See the destination, inspect the document and decide what happens next.
+  - region "Demonstration scenarios":
+    - generic: Try an interaction
+    - combobox "Try an interaction":
+      - option "1. Review and approve"
+      - option "2. Resolve two risks" [selected]
+      - option "3. Correct a false alarm"
+    - generic: Warning presentation
+    - combobox "Warning presentation":
+      - option "Specific evidence and consequences" [selected]
+      - option "Generic warning comparison"
+    - button "Load scenario"
+  - paragraph: Language understanding and safety judgements use scripted fixtures. The review controls work; the send is a local simulation.
+  - paragraph: 01 · YOUR REQUEST
+  - heading "Prepare the email" [level=2]
+  - generic: review
+  - blockquote: Send the project records to Alex.
+  - generic: Recipient
+  - combobox "Recipient":
+    - option "Choose the intended contact…"
+    - option "Alex Reed (project colleague) · alex@team.example" [selected]
+    - option "Alex Reed (external contact) · alex@outside.example"
+  - generic: Attachment
+  - combobox "Attachment":
+    - option "project_summary.txt"
+    - option "student_records.txt" [selected]
+    - option "public_event_budget.txt"
+  - generic "Inspect fictional attachment"
+  - paragraph: "Fixture classification: Restricted fixture"
+  - generic: "FICTIONAL TEST DATA STUDENT-ID: DEMO-0042 Private student record. Not for email sharing."
+  - generic: Subject
+  - textbox "Subject": Project document
+  - generic: Message
+  - textbox "Message": Hi Alex, please find the selected document attached.
+  - button "Apply changes and recheck" [active]
+  - generic: Draft version 3
+  - paragraph: 02 · CHECK BEFORE ACTING
+  - heading "Pause and resolve the risks" [level=2]
+  - paragraph: Each concern has its own evidence and recovery action.
+  - generic: Blocking issue
+  - heading "Restricted record detected" [level=3]
+  - paragraph: "Evidence: Fixture line 2: STUDENT-ID: DEMO-0042."
+  - paragraph: "Why it matters: Sending would disclose a fictional private record."
+  - paragraph: "Next step: Replace with the public summary, or cancel."
+  - checkbox "I checked the exact recipient, attachment and message shown here."
+  - generic: I checked the exact recipient, attachment and message shown here.
+  - button "Approve simulated send" [disabled]
+  - button "Cancel"
+  - paragraph: Resolve all blocking issues. Approval is unavailable.
+  - generic "Demonstrate a send failure"
+  - status: Draft changed. Checks rerun; earlier review invalidated.
+  - paragraph: 03 · VISIBLE FEEDBACK
+  - heading "Interaction record" [level=2]
+  - list:
+    - listitem: Scenario loaded · v1
+    - listitem: Scripted draft prepared · v1
+    - listitem: Exact draft reviewed · v1
+    - listitem: Mock send recorded; no email sent · v1
+    - listitem: Scenario loaded · v2
+    - listitem: Scripted draft prepared · v2
+    - listitem: Draft changed; approval invalidated; checks rerun · v3
+  - generic: Fictional contacts and documents only. No accounts, personal files or external services are accessed. Refreshing preserves this browser session until the server stops.

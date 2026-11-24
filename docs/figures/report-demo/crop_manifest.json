@@ -1,0 +1,200 @@
+[
+  {
+    "output": "normal-fields.png",
+    "original": "02-normal-review.jpg",
+    "crop": [
+      32,
+      582,
+      650,
+      877
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "normal-review.png",
+    "original": "02-normal-review.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      768
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "normal-result.png",
+    "original": "03-normal-result.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      650
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "risk-blocked.png",
+    "original": "04-risk-blocked.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      1082
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "contact-only-fixed.png",
+    "original": "05-contact-fixed.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      977
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "remaining-attachment-issue.png",
+    "original": "05-contact-fixed.jpg",
+    "crop": [
+      671,
+      537,
+      1233,
+      748
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "risk-edited-draft.png",
+    "original": "06-risk-rechecked.jpg",
+    "crop": [
+      32,
+      582,
+      650,
+      1170
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "risk-edited-fields.png",
+    "original": "06-risk-rechecked.jpg",
+    "crop": [
+      32,
+      582,
+      650,
+      877
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "risk-rechecked.png",
+    "original": "06-risk-rechecked.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      830
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "cancelled.png",
+    "original": "07-cancelled.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      650
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "public-attachment.png",
+    "original": "08-false-alarm-detailed.jpg",
+    "crop": [
+      32,
+      757,
+      650,
+      898
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "detailed-warning.png",
+    "original": "08-false-alarm-detailed.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      743
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "generic-warning.png",
+    "original": "09-false-alarm-generic.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      653
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "correction.png",
+    "original": "10-one-time-correction.jpg",
+    "crop": [
+      671,
+      762,
+      1233,
+      1170
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "corrected-result.png",
+    "original": "11-false-alarm-result.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      837
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "correction-reset.png",
+    "original": "12-correction-reset.jpg",
+    "crop": [
+      671,
+      742,
+      1233,
+      1139
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "send-failed.png",
+    "original": "14-send-failed.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      887
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  },
+  {
+    "output": "retry-success.png",
+    "original": "15-retry-success.jpg",
+    "crop": [
+      671,
+      417,
+      1233,
+      650
+    ],
+    "reason": "Enlarge an observed interface region without changing its content."
+  }
+]

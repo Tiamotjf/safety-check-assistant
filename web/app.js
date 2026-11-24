@@ -1,5 +1,5 @@
 "use strict";
-let state, dirty = false, busy = false;
+let state, dirty = false, busy = false, presentation = "detailed";
 const $ = id => document.getElementById(id);
 async function api(path, data) {
   const options = data === undefined ? {} : {method:"POST", headers:{"Content-Type":"application/json","X-Local-Review":"1"}, body:JSON.stringify(data)};
@@ -50,7 +50,7 @@ $("prepare").onclick=()=>act(async()=>{state=await api("/api/prepare",{});render
 $("draft-form").onsubmit=e=>{e.preventDefault();act(async()=>{state=await api("/api/draft",{recipient:$("recipient").value,file:$("file").value,subject:$("subject").value,body:$("message").value});render();});};
 for(const id of ["recipient","file","subject","message"])$(id).addEventListener("input",()=>{dirty=true;$("checked").checked=false;if(id==="file")displayFile();enableApproval();});
 $("checked").onchange=enableApproval;
-$("explanation").onchange=()=>{if(dirty){$("error").textContent="Apply draft changes before switching the warning presentation.";$("error").hidden=false;return;}render();};
+$("explanation").onchange=()=>{if(dirty){$("explanation").value=presentation;$("error").textContent="Apply draft changes before switching the warning presentation.";$("error").hidden=false;return;}presentation=$("explanation").value;render();};
 $("ack").onclick=()=>act(async()=>{if(dirty)throw new Error("Apply draft changes before recording a correction.");state=await api("/api/acknowledge",{reason:$("reason").value});render();});
 $("cancel").onclick=()=>act(async()=>{state=await api("/api/cancel",{});render();});
 $("fail").onchange=()=>act(async()=>{state=await api("/api/failure",{fail:$("fail").checked});render();});

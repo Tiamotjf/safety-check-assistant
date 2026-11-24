@@ -1,0 +1,77 @@
+- banner:
+  - generic: ✓
+  - text: Safety Check Assistant
+  - generic: Review before an agent acts
+  - generic: OFFLINE PROTOTYPE · NO REAL EMAIL
+- main:
+  - paragraph: AI AGENT SAFETY CHECK ASSISTANT
+  - heading "A clear decision before sending." [level=1]
+  - paragraph: See the destination, inspect the document and decide what happens next.
+  - region "Demonstration scenarios":
+    - generic: Try an interaction
+    - combobox "Try an interaction":
+      - option "1. Review and approve"
+      - option "2. Resolve two risks"
+      - option "3. Correct a false alarm" [selected]
+    - generic: Warning presentation
+    - combobox "Warning presentation":
+      - option "Specific evidence and consequences" [selected]
+      - option "Generic warning comparison"
+    - button "Load scenario"
+  - paragraph: Language understanding and safety judgements use scripted fixtures. The review controls work; the send is a local simulation.
+  - paragraph: 01 · YOUR REQUEST
+  - heading "Prepare the email" [level=2]
+  - generic: review
+  - blockquote: Send the public workshop budget handout to my project colleague.
+  - generic: Recipient
+  - combobox "Recipient":
+    - option "Choose the intended contact…"
+    - option "Alex Reed (project colleague) · alex@team.example" [selected]
+    - option "Alex Reed (external contact) · alex@outside.example"
+  - generic: Attachment
+  - combobox "Attachment":
+    - option "project_summary.txt"
+    - option "student_records.txt"
+    - option "public_event_budget.txt" [selected]
+  - generic "Inspect fictional attachment"
+  - paragraph: "Fixture classification: Public"
+  - generic: "PUBLIC WORKSHOP HANDOUT Published event budget: 200 demonstration units. Approved for public sharing."
+  - generic: Subject
+  - textbox "Subject": Project document
+  - generic: Message
+  - textbox "Message": Hi Alex, please find the selected document attached.
+  - button "Apply changes and recheck"
+  - generic: Draft version 5
+  - paragraph: 02 · CHECK BEFORE ACTING
+  - heading "A warning needs your judgement" [level=2]
+  - paragraph: A keyword is not proof. Inspect the document and decide for this action only.
+  - generic: Advisory · may be incorrect
+  - heading "Budget keyword needs context" [level=3]
+  - paragraph: "Evidence: The text contains 'budget', but also says 'PUBLIC WORKSHOP HANDOUT'."
+  - paragraph: "Why it matters: The heuristic may be a false alarm; the word alone does not prove confidentiality."
+  - paragraph: "Next step: Inspect the fixture and record a one-time decision, or cancel."
+  - generic: Why is this warning incorrect for this document?
+  - textbox "Why is this warning incorrect for this document?":
+    - /placeholder: "For example: the handout is marked public and approved for sharing."
+  - button "Record one-time correction"
+  - paragraph
+  - checkbox "I checked the exact recipient, attachment and message shown here."
+  - generic: I checked the exact recipient, attachment and message shown here.
+  - button "Approve simulated send" [disabled]
+  - button "Cancel"
+  - paragraph: Review the advisory and record a one-time correction first.
+  - generic "Demonstrate a send failure"
+  - paragraph: 03 · VISIBLE FEEDBACK
+  - heading "Interaction record" [level=2]
+  - list:
+    - listitem: Scripted draft prepared · v1
+    - listitem: Exact draft reviewed · v1
+    - listitem: Mock send recorded; no email sent · v1
+    - listitem: Scenario loaded · v2
+    - listitem: Scripted draft prepared · v2
+    - listitem: Draft changed; approval invalidated; checks rerun · v3
+    - listitem: Draft changed; approval invalidated; checks rerun · v4
+    - listitem: Cancelled without sending · v4
+    - listitem: Scenario loaded · v5
+    - listitem: Scripted draft prepared · v5
+  - generic: Fictional contacts and documents only. No accounts, personal files or external services are accessed. Refreshing preserves this browser session until the server stops.

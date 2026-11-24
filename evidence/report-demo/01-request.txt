@@ -1,0 +1,34 @@
+- banner:
+  - generic: ✓
+  - text: Safety Check Assistant
+  - generic: Review before an agent acts
+  - generic: OFFLINE PROTOTYPE · NO REAL EMAIL
+- main:
+  - paragraph: AI AGENT SAFETY CHECK ASSISTANT
+  - heading "A clear decision before sending." [level=1]
+  - paragraph: See the destination, inspect the document and decide what happens next.
+  - region "Demonstration scenarios":
+    - generic: Try an interaction
+    - combobox "Try an interaction":
+      - option "1. Review and approve" [selected]
+      - option "2. Resolve two risks"
+      - option "3. Correct a false alarm"
+    - generic: Warning presentation
+    - combobox "Warning presentation":
+      - option "Specific evidence and consequences" [selected]
+      - option "Generic warning comparison"
+    - button "Load scenario"
+  - paragraph: Language understanding and safety judgements use scripted fixtures. The review controls work; the send is a local simulation.
+  - paragraph: 01 · YOUR REQUEST
+  - heading "Prepare the email" [level=2]
+  - generic: request
+  - blockquote: Send the public project summary to Alex, my project colleague.
+  - button "Prepare simulated draft"
+  - paragraph: 02 · CHECK BEFORE ACTING
+  - heading "You stay in control" [level=2]
+  - paragraph: Prepare a draft to inspect its recipient, attachment and planned action.
+  - paragraph: 03 · VISIBLE FEEDBACK
+  - heading "Interaction record" [level=2]
+  - list:
+    - listitem: Scenario loaded · v1
+  - generic: Fictional contacts and documents only. No accounts, personal files or external services are accessed. Refreshing preserves this browser session until the server stops.

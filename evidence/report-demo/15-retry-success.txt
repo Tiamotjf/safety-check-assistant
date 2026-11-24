@@ -1,0 +1,62 @@
+- banner:
+  - generic: ✓
+  - text: Safety Check Assistant
+  - generic: Review before an agent acts
+  - generic: OFFLINE PROTOTYPE · NO REAL EMAIL
+- main:
+  - paragraph: AI AGENT SAFETY CHECK ASSISTANT
+  - heading "A clear decision before sending." [level=1]
+  - paragraph: See the destination, inspect the document and decide what happens next.
+  - region "Demonstration scenarios":
+    - generic: Try an interaction
+    - combobox "Try an interaction":
+      - option "1. Review and approve" [selected]
+      - option "2. Resolve two risks"
+      - option "3. Correct a false alarm"
+    - generic: Warning presentation
+    - combobox "Warning presentation":
+      - option "Specific evidence and consequences" [selected]
+      - option "Generic warning comparison"
+    - button "Load scenario"
+  - paragraph: Language understanding and safety judgements use scripted fixtures. The review controls work; the send is a local simulation.
+  - paragraph: 01 · YOUR REQUEST
+  - heading "Prepare the email" [level=2]
+  - generic: sent
+  - blockquote: Send the public project summary to Alex, my project colleague.
+  - generic: Recipient
+  - combobox "Recipient" [disabled]:
+    - option "Choose the intended contact…"
+    - option "Alex Reed (project colleague) · alex@team.example" [selected]
+    - option "Alex Reed (external contact) · alex@outside.example"
+  - generic: Attachment
+  - combobox "Attachment" [disabled]:
+    - option "project_summary.txt" [selected]
+    - option "student_records.txt"
+    - option "public_event_budget.txt"
+  - generic "Inspect fictional attachment"
+  - paragraph: "Fixture classification: Public"
+  - generic: Public project summary. No personal records.
+  - generic: Subject
+  - textbox "Subject" [disabled]: Project document
+  - generic: Message
+  - textbox "Message" [disabled]: Hi Alex, please find the selected document attached.
+  - button "Apply changes and recheck" [disabled]
+  - generic: Draft version 7
+  - paragraph: 02 · CHECK BEFORE ACTING
+  - heading "Decision recorded" [level=2]
+  - paragraph: No fixture rule raised a concern. This is not a guarantee that a real document is safe.
+  - status: Simulated send recorded. No real email was sent.
+  - paragraph: 03 · VISIBLE FEEDBACK
+  - heading "Interaction record" [level=2]
+  - list:
+    - listitem: Mock send recorded; no email sent · v5
+    - listitem: Scenario loaded · v6
+    - listitem: Scripted draft prepared · v6
+    - listitem: Scenario loaded · v7
+    - listitem: Scripted draft prepared · v7
+    - listitem: Failure demonstration configured · v7
+    - listitem: Exact draft reviewed · v7
+    - listitem: Mock send failed; no success claimed · v7
+    - listitem: Exact draft reviewed · v7
+    - listitem: Mock send recorded; no email sent · v7
+  - generic: Fictional contacts and documents only. No accounts, personal files or external services are accessed. Refreshing preserves this browser session until the server stops.

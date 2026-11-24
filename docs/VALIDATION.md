@@ -21,6 +21,14 @@ Run `python -m unittest discover -s tests -v`. The recorded console output is in
 
 Browser screenshots live in `../evidence/`. `browser-observations.txt` retains the final failure-state DOM snapshot before the demonstration was reset.
 
+## Report demonstration replay
+
+For the illustrated-report revision, Codex repeated the interactions in a fresh local server session on port 8767 on 24 November 2026. The student's existing port 8765 session was not reset. All 17 original full-page screenshots and matching DOM snapshots are in [report-demo](../evidence/report-demo/); [observations.json](../evidence/report-demo/observations.json) records the actions and observed panel regions. See [report demonstrations](REPORT_DEMONSTRATIONS.md) for the capture-by-capture account and its mapping to the three report examples and supplementary failure/retry check.
+
+The replay also checks that an old false-alarm correction is cleared after reloading the scenario and that a failed tool call can recover only after a fresh review. Captures `16-unsaved-edit-guard` and `17-saved-edit-switch` verify the warning-selector correction: trying to switch with unapplied edits restores the previous selection and prompts the user to apply changes; switching works after the new draft is checked. Original captures are preserved alongside the enlarged report crops. They are functional evidence produced by Codex, not participant data.
+
+The latest regression console record is [automated-tests.txt](../evidence/automated-tests.txt). It is separate from the browser record and identifies the actual command and test outcomes. The report text now applies course concepts without formal lecture citations and retains Harvard references for external research, following the student's editing request.
+
 ## Limits of evidence
 
 This verifies selected interactions and control invariants. It does not measure security against arbitrary attacks, scanner accuracy, decision quality, accessibility conformance or long-term warning fatigue. Browser UI controls and semantic labels were inspected, but no systematic accessibility audit was conducted. The generic/detailed mode still shares contextual fixture metadata; a future controlled study must isolate wording carefully and counterbalance scenario order.
