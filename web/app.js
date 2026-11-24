@@ -13,6 +13,7 @@ function enableApproval(){
   const advisory = state.issues.some(i=>!i.blocking);
   const open = ["review","failed"].includes(state.stage);
   $("approve").disabled=busy || !open || dirty || state.blocking || (advisory && !state.acknowledgement) || !$("checked").checked;
+  $("cancel").disabled=busy || !open;
   $("gate-note").textContent=dirty ? "Apply changes to rerun checks before approval." : state.blocking ? "Resolve all blocking issues. Approval is unavailable." : advisory && !state.acknowledgement ? "Review the advisory and record a one-time correction first." : "Approval applies only to this displayed draft. Any edit requires a fresh review.";
 }
 function render(){
@@ -26,7 +27,7 @@ function render(){
   const open=["review","failed"].includes(state.stage);
   for(const id of ["recipient","file","subject","message","apply"])$(id).disabled=!open;
   $("version").textContent="Draft version "+state.revision;
-  $("review-title").textContent=state.stage==="request"?"You stay in control":state.blocking?"Pause and resolve the risks":state.issues.length?"A warning needs your judgement":state.stage==="sent"?"Decision recorded":"Ready for your review";
+  $("review-title").textContent=state.stage==="sent"?"Decision recorded":state.stage==="cancelled"?"Interaction cancelled":state.stage==="failed"?"Send failed safely":state.stage==="request"?"You stay in control":state.blocking?"Pause and resolve the risks":state.issues.length?"A warning needs your judgement":state.stage==="sent"?"Decision recorded":"Ready for your review";
   $("review-note").textContent=state.stage==="request"?"Prepare a draft to inspect its recipient, attachment and planned action.":state.blocking?"Each concern has its own evidence and recovery action.":state.issues.length?"A keyword is not proof. Inspect the document and decide for this action only.":"No fixture rule raised a concern. This is not a guarantee that a real document is safe.";
   $("issues").replaceChildren();
   for(const i of state.issues){
@@ -55,3 +56,4 @@ $("cancel").onclick=()=>act(async()=>{state=await api("/api/cancel",{});render()
 $("fail").onchange=()=>act(async()=>{state=await api("/api/failure",{fail:$("fail").checked});render();});
 $("approve").onclick=()=>act(async()=>{if(dirty)throw new Error("Apply edits before approval.");const reviewed=await api("/api/review",{revision:state.revision,checked:$("checked").checked});state=await api("/api/send",{token:reviewed.token});render();});
 api("/api/state").then(s=>{state=s;render();}).catch(e=>{$("error").textContent=e.message;$("error").hidden=false;});
+
