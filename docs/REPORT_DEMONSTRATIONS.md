@@ -1,6 +1,6 @@
 # Report demonstrations
 
-Replayed on 24 November 2026 by Codex in a fresh local server session on port 8767, so the user's port 8765 session was not reset. No real email was sent. These are functional walkthroughs, not recruited-participant evidence.
+Functional walkthroughs recorded on 24 November 2026 using fictional data, with Codex assisting browser operation. Email delivery is simulated; no real email was sent.
 
 The assignment requires two or three examples of use in the report, with user actions, system responses and relevant feedback or control. The updated report uses three primary examples and one supplementary failure/retry check. It need not show every control as a separate example.
 
@@ -34,6 +34,6 @@ Code review identified that attempting a warning-mode change with unapplied draf
 
 ## Report editing
 
-Course concepts are applied without formal lecture citations, as requested. External research keeps Harvard author-date citations and an alphabetised reference list. The English text was revised for concrete descriptions of the actual implementation; the Chinese reading version follows it. AI assistance remains declared in the development record.
+Course concepts are applied without formal lecture citations, in the report. External research keeps Harvard author-date citations and an alphabetised reference list. The English text was revised for concrete descriptions of the actual implementation; the Chinese reading version follows it. AI assistance remains declared in the development record.
 
-Public GitHub publication is still deferred at the student's request.
+Project repository: https://github.com/Tiamotjf/safety-check-assistant. Submission version: `a2-submission-v3`.

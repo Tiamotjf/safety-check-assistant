@@ -1,6 +1,6 @@
 # Verified lecture mapping
 
-Checked against the student's supplied PDFs on 24 November 2026. Page numbers refer to physical PDF pages, including any inserted note pages. Lecture files are not redistributed in this repository.
+Checked against the supplied course PDFs on 24 November 2026. Page numbers refer to physical PDF pages, including any inserted note pages. Lecture files are not redistributed in this repository.
 
 | Source | Concept or guideline | Concrete design decision | Evidence boundary |
 |---|---|---|---|

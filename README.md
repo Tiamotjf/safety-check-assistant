@@ -1,6 +1,6 @@
 # AI Agent Safety Check Assistant
 
-README prose word count: 471 (headings and table text included; code and setup commands excluded).
+README prose word count: 436 (headings and table text included; code and setup commands excluded).
 
 ## Status
 
@@ -43,12 +43,12 @@ The recorded run passed 18 tests. Approvals are bound to draft version and conte
 
 See [development record](docs/DEVELOPMENT.md), [validation](docs/VALIDATION.md), [report demonstrations](docs/REPORT_DEMONSTRATIONS.md) and [lecture mapping](docs/LECTURE_MAPPING.md). Earlier Lab 2/3 documents are retained as explicitly labelled provenance, not runnable features. No Lab 4 code is reused.
 
-Codex assisted with implementation, tests, writing, diagrams and browser operation. The development record explains the warning-gate adaptation, two initial browser-discovered fixes and a later warning-selector correction. These are AI-operated checks, not participant research or a claim of independent student implementation. The student must review the material, record their own revisions and explain the design before submission.
+Codex assisted with Python and browser-interface implementation, test generation, diagrams, report drafting and browser walkthroughs. Its outputs were checked through 18 automated tests, recorded interface runs and reference verification. Checks led to fixes for cancellation, completed-state headings and the warning selector. The design follows the A1 review and Lab 2–3 specifications; the prototype uses scripted fixtures and simulated email delivery.
 
 ## Submission and additional files
 
-Local release label: `a2-review-v2`. Public GitHub publication is deferred at the student's request; add the real repository and immutable commit/release links to the report before submission. Do not submit placeholder links.
+Public repository: [https://github.com/Tiamotjf/safety-check-assistant](https://github.com/Tiamotjf/safety-check-assistant). Submission version: [a2-submission-v3](https://github.com/Tiamotjf/safety-check-assistant/tree/a2-submission-v3).
 
-The [English illustrated report](docs/A2_Project_Report_3110586_Illustrated.docx) and [Chinese reading version](docs/A2_Project_Report_中文版_图示修订版.docx) include three primary interaction examples and a supplementary failure/retry check. Their screenshots come from the 17-state replay recorded in [report demonstrations](docs/REPORT_DEMONSTRATIONS.md). Course concepts are applied without formal lecture citations; external sources use Harvard referencing. All project evidence can reasonably be kept in the repository; no supplementary submission ZIP is needed merely to duplicate it.
+The [English illustrated report](docs/A2_Project_Report_3110586_Final.docx) and [Chinese reading version](docs/A2_Project_Report_中文版_提交对照版.docx) include three primary interaction examples and a supplementary failure/retry check. Their screenshots come from the 17-state replay recorded in [report demonstrations](docs/REPORT_DEMONSTRATIONS.md). All project evidence can reasonably be kept in the repository; no supplementary submission ZIP is needed merely to duplicate it.
 
 The local handover archive is a convenience for moving the project, not an assignment requirement. There are no credentials or external dependencies to configure.
