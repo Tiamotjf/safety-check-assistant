@@ -34,6 +34,6 @@ Code review identified that attempting a warning-mode change with unapplied draf
 
 ## Report editing
 
-Course concepts are applied without formal lecture citations, in the report. External research keeps Harvard author-date citations and an alphabetised reference list. The English text was revised for concrete descriptions of the actual implementation; the Chinese reading version follows it. AI assistance remains declared in the development record.
+Course concepts are applied in the report without formal lecture citations. External research keeps Harvard author-date citations and an alphabetised reference list. The English text was revised for concrete descriptions of the actual implementation. AI assistance remains declared in the development record.
 
-Project repository: https://github.com/Tiamotjf/safety-check-assistant. Submission version: `a2-submission-v3`.
+Project repository: https://github.com/Tiamotjf/safety-check-assistant. Submission version: `a2-submission-final`.

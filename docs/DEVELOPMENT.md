@@ -35,13 +35,13 @@ Architecture, the report and README identify what is implemented, simulated and 
 
 ## Stage 4 — Put actual demonstrations in the report
 
-The illustrated reports now use actual interface states for three primary examples, plus a supplementary failure/retry check. [Report demonstrations](REPORT_DEMONSTRATIONS.md) links the steps, original screenshots, DOM snapshots and report crops.
+The final report uses actual interface states for three primary examples, plus a supplementary failure/retry check. [Report demonstrations](REPORT_DEMONSTRATIONS.md) links the steps, original screenshots, DOM snapshots and report crops.
 
 Seventeen interface states were replayed in a separate local session on 24 November 2026, with Codex assisting browser operation. The run covered preparation and approval; independent recipient and attachment blocks; edits and rechecking; cancellation; generic and specific warnings; one-time correction and its reset; tool failure; retry; and the unsaved-edit guard. The original evidence is in `../evidence/report-demo/`, with `observations.json` describing the observed actions and regions. These remain functional demonstrations with fictional data, not observations of recruited participants.
 
 A third interface inconsistency was identified during this revision: changing the warning selector while draft edits were unapplied could leave the selector showing generic wording while the cards still displayed the detailed explanation. The revised handler restores the previous selector value, keeps approval blocked and asks the user to apply the draft changes first. Capture `16-unsaved-edit-guard` verifies that guard; `17-saved-edit-switch` verifies that switching works after applying the edit and rerunning checks. The existing approval and server validation requirements were retained.
 
-The submission revision is identified by `a2-submission-v3` in the [public repository](https://github.com/Tiamotjf/safety-check-assistant). The latest automated output is retained in `../evidence/automated-tests.txt`; browser evidence is recorded separately because it checks visible behaviour that the control tests do not establish.
+The submission revision is identified by `a2-submission-final` in the [public repository](https://github.com/Tiamotjf/safety-check-assistant). The latest automated output is retained in `../evidence/automated-tests.txt`; browser evidence is recorded separately because it checks visible behaviour that the control tests do not establish.
 
 ## AI assistance
 
